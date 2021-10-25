@@ -32,9 +32,7 @@ public class Notification {
 	@ApiModelProperty(value = "notificationId")
 	private int notificationId;
 	
-	// Need a change here after model creation. 
 	@Column(name = "employee_id")
-	// This is employee object..not int
 	@ApiModelProperty(value = "employeeId")
 	private int employeeId;
 	
