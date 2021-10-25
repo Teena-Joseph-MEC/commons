@@ -1,10 +1,16 @@
 package com.germanium.commons.models;
 
-import javax.persistence.EmbeddedId;
+import java.util.Date;
+
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -19,8 +25,19 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Substitution {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@ApiModelProperty(value = "substitutionId")
+	@Column(name = "substitute_id")
+	private int substitutionId;
 
-	@EmbeddedId
-	private SubstitutionId id;
+	@ApiModelProperty(value = "leaveId")
+	@Column(name = "leave_id")
+	private int leaveId;
+
+	@ApiModelProperty(value = "dateOfApproval")
+	@Column(name = "date_of_approval")
+	private Date dateOfApproval;
 	
 }

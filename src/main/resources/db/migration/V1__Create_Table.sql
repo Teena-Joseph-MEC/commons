@@ -15,6 +15,5 @@ CREATE TABLE IF NOT EXISTS `substitution` (
 	`substitute_id` INT NOT NULL,
 	`leave_id` INT NOT NULL,
 	`date_of_approval` DATE NOT NULL,
-	PRIMARY KEY (`substitute_id`,`leave_id`)
-	FOREIGN KEY (`leave_id`) REFERENCES leave_rules(`leave_id`)
+	PRIMARY KEY (`substitute_id`)
 );
