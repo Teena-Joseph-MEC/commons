@@ -27,7 +27,9 @@ CREATE TABLE `login` (
     PRIMARY KEY(`username`)
 );
 
-INSERT INTO login (employee_id,username, password,isActive, roles, created_ts) VALUES (1,'admin','admin',true,'ADMIN', current_timestamp());
-INSERT INTO login (employee_id,username, password,isActive, roles, created_ts) VALUES (2,'arjun','qwerty',true,'STAFF', current_timestamp());
-INSERT INTO login (employee_id,username, password,isActive, roles, created_ts) VALUES (3,'chinmay','qwertyu',true,'ADMIN', current_timestamp());
+
+INSERT INTO login (employee_id,username, password,is_active, roles, created_ts) VALUES (1,'admin','admin',true,'ADMIN', current_timestamp());
+INSERT INTO login (employee_id,username, password,is_active, roles, created_ts) VALUES (2,'arjun','qwerty',true,'STAFF', current_timestamp());
+INSERT INTO login (employee_id,username, password,is_active, roles, created_ts) VALUES (3,'chinmay','qwertyu',true,'ADMIN', current_timestamp());
+
 
