@@ -38,7 +38,7 @@ jobs:
        labels: ${{ steps.meta.outputs.labels }}
        tags: |
            arjunkshenoy/lms-common-service:latest
-   - name: Image digest
-     run: echo ${{ steps.docker_build.outputs.digest }}
+    - name: Image digest
+      run: echo ${{ steps.docker_build.outputs.digest }}
       
       
